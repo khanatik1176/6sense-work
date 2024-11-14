@@ -92,6 +92,8 @@ const CreateUser = () => {
 
       try{
         
+        //this part will work when we will have a backend.
+
         const response = await axios.post('http://localhost:3000/users', data,
           {
             headers: {
@@ -149,7 +151,7 @@ const CreateUser = () => {
                  id="firstName" 
                  onChange={handleChange}
                  value={formData.firstName}
-                 className='bg-transparent bg-slate-100 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
+                 className='bg-transparent bg-slate-200 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
                 {errors.firstName && <span className="text-red-500 text-sm">{errors.firstName}</span>}
                 </>
                 <>
@@ -160,7 +162,7 @@ const CreateUser = () => {
                   id="lastName" 
                   onChange={handleChange}
                   value={formData.lastName}
-                  className='bg-transparent bg-slate-100 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
+                  className='bg-transparent bg-slate-200 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
                 {errors.lastName && <span className="text-red-500 text-sm">{errors.lastName}</span>}
                 </>
                 <>
@@ -171,7 +173,7 @@ const CreateUser = () => {
                 id="email" 
                 onChange={handleChange} 
                 value={formData.email}
-                className='bg-transparent bg-slate-100 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black'/>
+                className='bg-transparent bg-slate-200 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black'/>
                 {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
                 </>
                 <>
@@ -182,7 +184,7 @@ const CreateUser = () => {
                 id="phoneNumber" 
                 onChange={handleChange}
                 value={formData.phoneNumber}
-                className='bg-transparent bg-slate-100 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
+                className='bg-transparent bg-slate-200 border rounded-2xl h-8 pl-4 pr-10 w-90 text-black' />
                 {errors.phoneNumber && <span className="text-red-500 text-sm">{errors.phoneNumber}</span>}
                 </>
                 <button className='bg-blue-600 border rounded-3xl h-10 mt-5 w-42 text-white hover:bg-blue-700 transition-all ease-in duration-200'>Create</button>

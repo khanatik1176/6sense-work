@@ -5,7 +5,45 @@ import axios from 'axios';
 import { useRouter } from 'next/navigation';
 
 const UserTable = () => {
-  const [users, setUsers] = useState([]);
+  
+  const [users, setUsers] = useState([
+
+  {
+      id: "2",
+      firstName: "Rahman",
+      lastName: "Hossain",
+      email: "Rahman12@gmail.com",
+      phoneNumber: "01767159062",
+      status: "Active"
+  },
+  {
+      id: "3",
+      firstName: "Farhan",
+      lastName: "Ahmed",
+      email: "Far122@gmail.com",
+      phoneNumber: "01711896464",
+      status: "Active"
+  },
+  {
+      id: "4",
+      firstName: "Raihan",
+      lastName: "Ahmed",
+      email: "Rar122@gmail.com",
+      phoneNumber: "01722896464",
+      status: "Active"
+  },
+  {
+      id: "5",
+      firstName: "Raihan",
+      lastName: "Khan",
+      email : "rak32@gmail.com",
+      phoneNumber: "01742896424",
+      status: "Active"
+
+  }
+
+
+  ]);
   const router = useRouter();
 
   const fetchUsers = async () => {
@@ -28,7 +66,7 @@ const UserTable = () => {
   const handleBlock = async (id, currentStatus) => {
     const newStatus = currentStatus === 'Active' ? 'Blocked' : 'Active';
     try {
-      await axios.put(`http://localhost:3000/users/${id}`, { status: newStatus });
+      // await axios.put(`http://localhost:3000/users/${id}`, { status: newStatus });
       setUsers(users.map(user => user.id === id ? { ...user, status: newStatus } : user));
     } catch (error) {
       console.log(error);
@@ -37,7 +75,7 @@ const UserTable = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/users/${id}`);
+      // await axios.delete(`http://localhost:3000/users/${id}`);
       setUsers(users.filter(user => user.id !== id));
     } catch (error) {
       console.log(error);

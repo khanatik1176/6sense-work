@@ -5,6 +5,45 @@ import { useRouter, useParams } from 'next/navigation';
 import axios from 'axios';
 
 const UserDetails = () => {
+
+
+  const [users, setUsers] = useState([
+
+    {
+        id: "2",
+        firstName: "Rahman",
+        lastName: "Hossain",
+        email: "Rahman12@gmail.com",
+        phoneNumber: "01767159062",
+        status: "Active"
+    },
+    {
+        id: "3",
+        firstName: "Farhan",
+        lastName: "Ahmed",
+        email: "Far122@gmail.com",
+        phoneNumber: "01711896464",
+        status: "Active"
+    },
+    {
+        id: "4",
+        firstName: "Raihan",
+        lastName: "Ahmed",
+        email: "Rar122@gmail.com",
+        phoneNumber: "01722896464",
+        status: "Active"
+    },
+    {
+        id: "5",
+        firstName: "Raihan",
+        lastName: "Khan",
+        email : "rak32@gmail.com",
+        phoneNumber: "01742896424",
+        status: "Active"
+  
+    }
+  ]);
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -19,8 +58,8 @@ const UserDetails = () => {
 
   const fetchPerticularUser = async () => {
     try {
-      const response = await axios.get(`http://localhost:3000/users/${id}`);
-      setFormData(response.data);
+      // const response = await axios.get(`http://localhost:3000/users/${id}`);
+      setFormData(users.find(user => user.id === id));
     } catch (error) {
       console.log(error);
     }

@@ -1,10 +1,6 @@
 {
   "users": [
     {
-      "status": "Active",
-      "id": "3"
-    },
-    {
       "id": "b1ac",
       "firstName": "Raihan",
       "lastName": "Ahmed",
