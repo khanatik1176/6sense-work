@@ -21,6 +21,6 @@ This project is an Admin System designed for managing users in a simple yet effe
 ## Demo
 
 You can view the live version of the app here:  
-[6sense Work - Admin System](https://6sense-work.vercel.app/)
+[Admin System](https://6sense-work.vercel.app/)
 
 Please note that as this is a demo version, the data is fixed and does not update in real time due to the absence of a persistent database.
