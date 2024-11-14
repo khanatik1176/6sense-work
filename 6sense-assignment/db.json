@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "status": "Active",
+      "id": "3"
+    },
+    {
+      "id": "b1ac",
+      "firstName": "Raihan",
+      "lastName": "Ahmed",
+      "email": "Rar122@gmail.com",
+      "phoneNumber": "01722896464",
+      "status": "Active"
+    },
+    {
+      "id": "6de4",
+      "firstName": "Faisal",
+      "lastName": "Ahmed",
+      "email": "faisal12@gmail.com",
+      "phoneNumber": "01767159062",
+      "status": "Active"
+    },
+    {
+      "id": "5e4c",
+      "firstName": "asasd",
+      "lastName": "adsas",
+      "email": "asdasd@gmail.com",
+      "phoneNumber": "017671590632",
+      "status": "Active"
+    },
+    {
+      "id": "66fa",
+      "firstName": "adssd",
+      "lastName": "asdasda",
+      "email": "ad@gmail.com",
+      "phoneNumber": "01767156312",
+      "status": "Active"
+    }
+  ]
+}
