@@ -88,7 +88,7 @@ const UserTable = () => {
         {!users || users.length === 0 ? (
           <p className='text-3xl text-black'>No users found</p>
         ) : (
-          <table className='table-auto text-black w-full'>
+          <table className='table-auto text-black xl:w-full overflow-x-auto xl:overflow-x-hidden'>
             <thead>
               <tr>
                 <th className='px-4 py-2 border'>First Name</th>
@@ -108,7 +108,7 @@ const UserTable = () => {
                   <td className='border px-4 py-2'>{user.phoneNumber}</td>
                   <td className='border px-4 py-2'>{user.status}</td>
                   <td className='border px-4 py-2' colSpan="3">
-                    <div className='flex justify-around gap-6'>
+                    <div className='flex justify-around flex-col xl:flex-row gap-6'>
                       <button className='bg-blue-500 hover:bg-blue-600 text-white px-6 py-1 rounded-2xl' onClick={() => handleDetails(user.id)}>Details</button>
                       <button
                         className={`px-6 py-1 rounded-2xl ${user.status === 'Active' ? 'bg-yellow-500 hover:bg-yellow-600 text-black' : 'bg-green-500 hover:bg-green-600 text-white'}`}

@@ -139,7 +139,7 @@ const CreateUser = () => {
 
   return (
     <div className='full-form-area bg-blue-400 h-screen'>
-        <div className="form-area bg-white flex flex-col rounded-l-3xl rounded-r-3xl w-[400px] h-[600px] justify-center items-center relative left-[750px] top-[200px]">
+        <div className="form-area bg-white flex flex-col rounded-l-3xl rounded-r-3xl w-[350px] h-[550px] sm:w-[400px] sm:h-[600px] justify-center items-center relative left-[10px] top-[150px] sm:left-[500px] sm:top-[200px] xl:left-[750px] xl:top-[200px]">
             <h1 className='text-3xl font-sans text-black '> Create User </h1>
 
             <div className="form-part">
