@@ -10,7 +10,7 @@ export default function Home() {
 
 
   return (
-    <div className=" bg-white grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans overflow-x-hidden">
+    <div className="bg-slate-200 grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-sans overflow-x-hidden">
         <div className="heading-area">
               <h1 className="text-4xl text-black relative right-10 xl:right-0">Admin Dashboard</h1>
 
@@ -22,7 +22,7 @@ export default function Home() {
         </div>
 
 
-            <div className="table-area w-[500px]">
+            <div className="table-area">
 
                <UserTable /> 
 

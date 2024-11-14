@@ -83,12 +83,12 @@ const UserTable = () => {
   };
 
   return (
-    <div className='bg-white min-h-screen p-8 pb-20 font-sans'>
+    <div className='min-h-screen p-8 pb-20 font-sans'>
       <div className='flex flex-col items-center justify-center'>
         {!users || users.length === 0 ? (
           <p className='text-3xl text-black'>No users found</p>
         ) : (
-          <table className='table-auto text-black xl:w-full overflow-x-auto xl:overflow-x-hidden'>
+          <table className='table-auto border border-gray-400 bg-slate-400 text-black xl:w-full overflow-x-auto xl:overflow-x-hidden'>
             <thead>
               <tr>
                 <th className='px-4 py-2 border'>First Name</th>
